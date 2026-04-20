@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp"
+    android:background="@color/background_light">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Form Identitas Mahasiswa"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:background="@color/primary_pink"
+        android:textColor="@color/background_light"
+        android:gravity="center"
+        android:padding="12dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Lengkap"
+        android:textStyle="bold"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/etNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Nama Lengkap"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:padding="10dp"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jenis Kelamin"
+        android:textStyle="bold"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:layout_marginBottom="5dp"/>
+
+    <RadioGroup
+        android:id="@+id/rgGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp">
+
+        <RadioButton
+            android:id="@+id/rbLaki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laki-laki"
+            android:buttonTint="@color/design_default_color_on_secondary"
+            android:layout_marginEnd="15dp"/>
+
+        <RadioButton
+            android:id="@+id/rbPerempuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perempuan"
+            android:buttonTint="@color/primary_pink"/>
+    </RadioGroup>
+
+    <!-- Hobi -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hobi"
+        android:textStyle="bold"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:layout_marginBottom="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+
+        <CheckBox
+            android:id="@+id/cbMembaca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Membaca"
+            android:buttonTint="@color/cardview_dark_background"
+            android:layout_marginBottom="6dp"/>
+
+        <CheckBox
+            android:id="@+id/cbCoding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coding"
+            android:buttonTint="@color/cardview_dark_background"
+            android:layout_marginBottom="6dp"/>
+
+        <CheckBox
+            android:id="@+id/cbOlahraga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Olahraga"
+            android:buttonTint="@color/cardview_dark_background"
+            android:layout_marginBottom="5dp"/>
+
+        <CheckBox
+            android:id="@+id/cbMenulis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menulis"
+            android:buttonTint="@color/cardview_dark_background"/>
+    </LinearLayout>
+
+    <!-- Tombol -->
+    <Button
+        android:id="@+id/btnTampilkan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Tampilkan"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:backgroundTint="@color/primary_pink"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="18dp"
+        android:elevation="4dp"
+        android:background="#E7E7ED"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:lineSpacingExtra="4dp"
+        android:text="Hasil akan muncul di sini..."/>
+
+</LinearLayout>
